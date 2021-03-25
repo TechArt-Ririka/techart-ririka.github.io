@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<canvas id="square" width =10 height=100></canvas>
+		<title>Simple Wave - Game&TA Ririka</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Tech Art</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Simple Wave</h1>
+							<span class="image main"><img src="images/pic13.jpg" alt=""/></span>
+							<p>In order to achieve wave effect, there are many methods to implement, from simple sine wave to FFT ocean. Simulating water wave is simple, where using multiple sine waves can easily achieve the shape of the water. Nevertheless, it is not actually similar to the realistic water. FFT(Fast Fourier Transform) Ocean is thus introduced, which is a technique that can produce incredible realism for sufficiently large sampling grids.</p>
+
+							<div class="img_middle">
+								<img src="images/Simplewave/Sine Wave.png" alt="" width="600" height="360" ><img>
+							</div>
+							<br>
+							<div class="text_middle">Sine Wave</div>
+							<br>
+
+							<div class="img_middle">
+								<img src="images/Simplewave/FFT Wave.png" alt="" width="800" height="360" ><img>
+							</div>
+							<br>
+							<div class="text_middle">FFT Ocean</div>
+							<br>
+
+							<p>Realistic wave does not really look like perfect sine wave. Instead, the genuine wave is steeper than that.</p>
+
+							<div class="img_middle">
+								<img src="images/Simplewave/Steeper Wave.jpg" alt="" width="800" height="360" ><img>
+							</div>
+							<br>
+							<div class="text_middle">Steeper Wave</div>
+							<br>
+
+							<p>Thus, gerstner wave is a great choice to make realistic water wave</p>
+
+							<div class="img_middle">
+								<img src="images/Simplewave/sine-gerstner.png" alt="" width="900" height="360" ><img>
+							</div>
+							<br>
+							<div class="text_middle">Sine Wave vs. Gersnter Wave</div>
+							<br>
+
+
+							<h2>References</h2>
+								<p>
+									<a href="https://www.zoltanjing.com/home/ocean-surface-simulation-and-rendering" target="_blank">Ocean Surface Simulation and Rendering</a>
+									</p>
+								<p>
+									<a href="https://catlikecoding.com/unity/tutorials/flow/waves/" target="_blank">CatLikeCoding Wave</a>
+								</p>
+							
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
